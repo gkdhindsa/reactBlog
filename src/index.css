@@ -1,13 +1,47 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+.App{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding:
+  0.5rem 2rem;
+  align-items: center;
+}
+.brand{
+  color: #f1356d;
+}
+.list a{
+  display: inline;
+  padding: 0 2rem;
+  text-decoration: none;
+  color: #555;
+}
+.list a:hover{
+  color: #f1356d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Blog styles*/
+.blog-preview{
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid #fafafa;
+
+}
+.blog-preview::hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0.1)
+
+}
+.blog-preview h2{
+  font-size: 1.2rem;
+  color: #f1356d;
+  margin-top: 0.5rem;
 }

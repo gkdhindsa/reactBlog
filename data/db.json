@@ -1,0 +1,21 @@
+{
+    "blogs": [{
+            "title": "My new website",
+            "body": "lorem ipsum...",
+            "author": "Gurnehmat",
+            "id": 1
+        },
+        {
+            "title": "yep",
+            "body": "lorem ipsum...",
+            "author": "GKD",
+            "id": 2
+        },
+        {
+            "title": "go",
+            "body": "lorem ipsum...", 
+            "author": "GNKD",
+             "id":3
+            }
+        ]
+    }
