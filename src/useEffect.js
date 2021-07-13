@@ -10,11 +10,13 @@ const useFetch=(url)=>{
         const abortCont=new AbortController();
         fetch(url, {signal: abortCont.signal})
         .then((response)=>{
+            
             if(!response.ok){
                 throw new Error('NOPE')
             }
             return response.json()
         }).then((data)=>{
+            console.log(data)
            setData(data)
            setIsPending(false)
            setError(null)
@@ -27,13 +29,13 @@ const useFetch=(url)=>{
             }
            
         })
-        console.log('use Effect ran')
+        
 
         return ()=> abortCont.abort()
         
     },[ ])
     
-
+console.log(data)
     return {data, isPending, error}
 
 }
