@@ -15,6 +15,7 @@ body{
   padding:
   0.5rem 2rem;
   align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .brand{
   color: #f1356d;
@@ -57,4 +58,58 @@ body{
 
 .blog-preview a{
   text-decoration: none;
+}
+
+
+.blog-details h2{
+  font-size: 1.2rem;color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details button{
+  background-color: #f1356d;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+.blog-details div{
+  margin: 20px 0;
+}
+/* Form */
+
+label, input{
+  display: block;
+}
+label{
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+input, textarea, select, .create button{
+  margin-bottom: 1.5rem;
+  font-family: 'Raleway';
+  font-size: 1rem;
+}
+
+input, textarea, select{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+textarea{
+  resize: none;
+}
+
+.create button{
+  padding: 0.5rem 2rem;
+  background-color: #f1356d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
 }
